@@ -38,14 +38,14 @@ public class JudgementScript : MonoBehaviour
                 }
                 if (collision.gameObject.tag == m_FalseTag)
                 {
-                    m_gm.isEnd = true;
+                    m_gm.isOver = true;
                     Destroy(collision.gameObject);
                 }
                 break;
             case ModeType.DestroyArea:
                 if (collision.gameObject.tag == m_trueTag)
                 {
-                    m_gm.isEnd = true;
+                    m_gm.isOver = true;
                     Destroy(collision.gameObject);
                 }
                 if (collision.gameObject.tag == m_FalseTag)

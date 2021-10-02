@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+		Cursor.visible = false;
 		m_rb = GetComponent<Rigidbody2D>();
 		m_rb.gravityScale = 0;
 		m_circle = GetComponent<CircleCollider2D>();

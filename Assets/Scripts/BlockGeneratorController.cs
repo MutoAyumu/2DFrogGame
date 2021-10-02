@@ -28,7 +28,7 @@ public class BlockGeneratorController : MonoBehaviour
             isOn = true;
         }
 
-        if(m_block != null && !m_gm.isEnd)
+        if(m_block != null && !m_gm.isOver)
         {
             m_timeLimit -= Time.deltaTime;
 
