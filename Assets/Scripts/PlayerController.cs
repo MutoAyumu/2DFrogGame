@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CircleCollider2D))]
 public class PlayerController : MonoBehaviour
 {
 	// 位置座標
@@ -9,7 +11,18 @@ public class PlayerController : MonoBehaviour
 	// スクリーン座標をワールド座標に変換した位置座標
 	private Vector3 screenToWorldPointPosition;
 
-	void Update()
+	Rigidbody2D m_rb;
+	CircleCollider2D m_circle;
+
+    private void Start()
+    {
+		m_rb = GetComponent<Rigidbody2D>();
+		m_rb.gravityScale = 0;
+		m_circle = GetComponent<CircleCollider2D>();
+		m_circle.isTrigger = true;
+    }
+
+    void Update()
 	{
 		// Vector3でマウス位置座標を取得する
 		position = Input.mousePosition;
