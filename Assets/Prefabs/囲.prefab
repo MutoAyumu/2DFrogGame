@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 5964641459694495725}
   - component: {fileID: 6259404844424466272}
   - component: {fileID: 7022911218854664278}
-  - component: {fileID: 7088289809503360884}
   m_Layer: 0
   m_Name: "\u56F2"
-  m_TagString: Untagged
+  m_TagString: False
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,17 +120,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &7088289809503360884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5964641459694495723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14fb42b092c5b614bb83da8570b9e5f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_mouseTag: Player
-  m_destroyAreaTag: Finish

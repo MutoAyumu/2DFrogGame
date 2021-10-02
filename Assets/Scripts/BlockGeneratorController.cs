@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class BlockGeneratorController : MonoBehaviour
 {
-    [SerializeField] BlockScript[] m_block = default;
+    [SerializeField] GameObject[] m_block = default;
     [SerializeField] GameObject[] m_instancePos = default;
     [SerializeField] float m_instanceTime = 3f;
     float m_timeLimit;
 
+    GameManager m_gm;
+
     private void Start()
     {
         m_timeLimit = m_instanceTime;
+        m_gm = GameObject.FindObjectOfType<GameManager>();
     }
     private void FixedUpdate()
     {
-        if(m_block != null)
+        if(m_block != null && !m_gm.isEnd)
         {
             m_timeLimit -= Time.deltaTime;
 
