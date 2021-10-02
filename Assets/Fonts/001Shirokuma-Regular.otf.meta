@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f7575d17c23ad94abf838a095bb9647
+guid: 7829844b9f40f724381d954495aac67c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: 851Letrogo
+  fontName: 001Shirokuma
   fontNames:
-  - 851Letrogo
+  - 001Shirokuma
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

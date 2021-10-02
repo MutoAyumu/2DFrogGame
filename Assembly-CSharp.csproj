@@ -632,9 +632,6 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>C:/Users/vantan/2DGame1002/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/vantan/2DGame1002/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>C:/Users/vantan/2DGame1002/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
@@ -685,9 +682,6 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>C:/Users/vantan/2DGame1002/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/vantan/2DGame1002/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>C:/Users/vantan/2DGame1002/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
