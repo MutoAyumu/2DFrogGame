@@ -17,13 +17,13 @@ public class GameManager : MonoBehaviour
     bool isOn;
     [SerializeField] public Text m_text = default;
     [SerializeField] public float m_remainder = 20f;
-    float m_currentNum;
+    [System.NonSerialized]public float m_maxNum;
     [SerializeField] public float m_upNum = 5f;
     [SerializeField] public Transform m_back = default;
 
     private void Start()
     {
-        m_currentNum = m_remainder;
+        m_maxNum = m_remainder;
     }
 
     private void Update()
@@ -45,14 +45,14 @@ public class GameManager : MonoBehaviour
         {
             m_GameOverEvent.Invoke();
             Cursor.visible = true;
-            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(m_currentNum - m_remainder);
+            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(m_maxNum - m_remainder);
             isOn = true;
         }
         if(m_remainder <= 0 && !isOn)
         {
             m_GameClearEvent.Invoke();
             Cursor.visible = true;
-            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(m_currentNum - m_remainder);
+            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(m_maxNum - m_remainder);
             isOn = true;
         }
     }

@@ -8,6 +8,8 @@ public class JudgementScript : MonoBehaviour
     [SerializeField] string m_FalseTag = "False";
     [SerializeField] ModeType m_type;
     [SerializeField] float m_increase = 1f;
+    [SerializeField] AudioSource m_audio = default;
+    [SerializeField] AudioSource m_bgm = default;
 
     GameManager m_gm;
     Vector2 m_pos;
@@ -34,6 +36,8 @@ public class JudgementScript : MonoBehaviour
                     m_gm.m_remainder--;
                     m_pos.y -= m_increase;
                     m_gm.m_back.position = m_pos;
+                    m_audio.Play();
+                    m_bgm.pitch += 1 / m_gm.m_maxNum;
                     Destroy(collision.gameObject);
                 }
                 if (collision.gameObject.tag == m_FalseTag)
